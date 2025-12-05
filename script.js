@@ -114,7 +114,7 @@ scrollTopButton.style.cssText = `
     right: 30px;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
     border: none;
     border-radius: 50%;

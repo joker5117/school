@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
+    --primary-color: #2563eb; /* 藍色系 primary */
+    --secondary-color: #1e40af; /* 深藍 / indigo */
     --text-color: #333;
-    --light-bg: #f7fafc;
+    --light-bg: #f0f7ff; /* 淡藍背景 */
     --white: #ffffff;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -220,7 +220,7 @@ body {
 
 .skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.18);
 }
 
 .skill-card i {
@@ -319,7 +319,7 @@ body {
 
 .portfolio-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.25);
 }
 
 .portfolio-card img {
@@ -463,7 +463,7 @@ body {
 
 .social-links a:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
 }
 
 /* ===== Footer ===== */
