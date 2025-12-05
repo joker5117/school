@@ -203,41 +203,59 @@ body {
     background-color: var(--light-bg);
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.skills-list {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.skill-card {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
+.skill-item {
+    margin-bottom: 2.5rem;
 }
 
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.18);
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
 }
 
-.skill-card i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+.skill-header h3 {
+    font-size: 1.1rem;
     color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
 }
 
-.skill-card p {
-    color: #777;
-    font-size: 0.95rem;
+.skill-percent {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: rgba(56, 184, 148, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    transition: width 0.8s ease;
+    animation: fillProgress 0.8s ease;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0 !important;
+    }
 }
 
 /* ===== Experience Section ===== */
@@ -536,10 +554,6 @@ body {
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-grid {
         grid-template-columns: 1fr;
     }
 
